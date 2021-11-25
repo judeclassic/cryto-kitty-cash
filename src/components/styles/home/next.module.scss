@@ -1,0 +1,75 @@
+.next {
+    width: 100%;
+    height: fit-content;
+    padding: 30px 0 30px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background: #1a1a1a65;
+
+    @media (max-width:550px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    & .wrapper {
+        width: 1050px;
+        height: 200px;
+        text-align: center;
+        display: grid;
+        place-items: center;
+
+        @media (max-width:1050px) {
+            width: 88%;
+            height: fit-content;
+            padding: 50px 0;
+            padding-top: 40px;
+        }
+
+        & .n_text {
+            height: fit-content;
+            width: fit-content;
+            font-family: 'Mochiy Pop One', sans-serif;
+            font-size: 40px;
+            color: #f5f5fa;
+            word-spacing: 10px;
+            position: relative;
+
+            @media (max-width:600px) {
+                line-height: 1.5;
+            }
+
+            &::before {
+                content: 'Badger Inu - $BDG';
+                position: absolute;
+                color: #E7C704;
+                font-family: 'Josefin Sans', sans-serif;
+                right: 0;
+                bottom: -50px;
+                font-size: 15px;
+                word-spacing: unset;
+
+                @media (max-width:600px) {
+                    bottom: -40px;
+                }
+            }
+        }
+        
+        
+    }
+}
+
+
+
+@media (max-width:550px) {
+
+.next {
+
+    & .wrapper {
+        width: 88%;
+        height: fit-content;
+    }
+}
+
+
+}

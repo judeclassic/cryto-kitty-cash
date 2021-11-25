@@ -1,0 +1,156 @@
+.more {
+    width: 100%;
+    height: fit-content;
+    padding: 100px 0 10px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    // background: #f9f9f9;
+
+    @media (max-width:550px) {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    & .wrapper {
+        width: 1050px;
+        height: auto;
+
+        @media (max-width:1050px) {
+            width: 80%;
+        }
+
+        & ._tag {
+            display: flex;
+            justify-content: normal;
+            align-items: center;
+            margin-bottom: 14px;
+            font-weight: 600;
+            color: #fff;
+            letter-spacing: .1em;
+            position: relative;
+            text-transform: uppercase;
+            width: 1050px;
+            font-family: 'Josefin Sans', sans-serif;
+
+            @media (max-width:550px) {
+                font-size: 14px;
+                width: 100%;
+            }
+
+            &::before {
+                content: "";
+                margin-right: 8px;
+                display: flex;
+                width: 64px;
+                height: 1px;
+                background: #E7C704;
+            }
+        }
+
+        & .card_wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: fit-content;
+            width: 100%;
+            margin: 4rem auto;
+            flex-wrap: wrap;
+
+            //  @media (max-width:1100px) {
+            //     flex-wrap: wrap;
+            // }
+
+            & .card {
+                width: 300px;
+                height: 380px;
+                // background-color: #e7c9042d;
+                padding-left: 1.5rem;
+                position: relative;
+                border: 1px solid #E7C704;
+                padding-top: 120px;
+                margin-bottom: 4rem;
+
+                 @media (max-width:550px) {
+                    &:not(:last-of-type) {
+                        margin-bottom: 4rem;
+                    }
+                }
+                
+                &::before {
+                    content: '';
+                    height: 100%;
+                    width: 100%;
+                    position: absolute; 
+                    background-color: #1a1a1a7c;
+                    top: -15px;
+                    left: -15px;
+                    z-index: -1;
+                    border: 1px solid #E7C704;
+                    // border-top: 1px solid #E7C704;
+                }
+
+                & .after {
+                    height: 100px;
+                    width: 100%;
+                    position: absolute; 
+                    background-color: #1a1a1a;
+                    top: 0;
+                    left: 0;
+                    border-bottom: 1px solid #E7C704;
+                    padding-left: 1.5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    & svg {
+                        height: 45px;
+                        color: #E7C704;
+                    }
+
+                }
+
+                & .content {
+                    padding-right: 2.5rem;
+
+                    & .title {
+                        font-size: 19px;
+                        line-height: 32px;
+                        font-weight: 500;
+                        color: #E7C704;
+                        margin-bottom: 15px;
+                    }
+
+                    & .desc {
+                        font-size: 17px;
+                        line-height: 32px;
+                        font-weight: 200;
+                        color: #8e8f9a;
+                        margin-bottom: 15px;
+
+                        @media (max-width:600px) {
+                            font-weight: 300; 
+                        }
+                    }
+                }
+
+            }
+        }
+        
+    }
+}
+
+
+
+@media (max-width:550px) {
+
+.more {
+
+    & .wrapper {
+        width: 80%;
+        height: fit-content;
+    }
+}
+
+
+}

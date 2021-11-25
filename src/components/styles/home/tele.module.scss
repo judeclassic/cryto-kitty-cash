@@ -1,0 +1,102 @@
+.tele {
+    width: 100%;
+    height: fit-content;
+    padding: 30px 0 30px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background: #1a1a1a65;
+
+   
+    & .wrapper {
+        width: 1050px;
+        height: 200px;
+        text-align: center;
+        display: grid;
+        place-items: center;
+
+        @media (max-width:600px) {
+            width: 88%;
+            height: fit-content;
+            padding: 50px 0;
+            padding-top: 40px;
+        }
+
+        & .n_text {
+            height: fit-content;
+            width: fit-content;
+            font-family: 'Mochiy Pop One', sans-serif;
+            font-size: 40px;            
+            word-spacing: 10px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+
+            @media (max-width:600px) {
+                line-height: 1.5;
+                font-size: 30px;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+
+                @media (max-width:600px) {
+                   transform: scale(.9);
+                }
+            }     
+            
+            & a {
+                color: #f5f5fa;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & img {
+                    margin-left: 1rem;
+                    
+                    @media (max-width:600px) {
+                        position: absolute;
+                        top: -5px;
+                        height: 20px;
+                        right: -25px;
+                    }
+                }
+            }
+            
+            &::before {
+                content: '$BDG via t.me';
+                position: absolute;
+                color: #E7C704;
+                font-family: 'Josefin Sans', sans-serif;
+                right: 0;
+                bottom: -50px;
+                font-size: 15px;
+                word-spacing: unset;
+
+                @media (max-width:600px) {
+                    bottom: -40px;
+                }
+            }
+        }
+        
+        
+    }
+}
+
+
+
+@media (max-width:550px) {
+
+.tele {
+
+    & .wrapper {
+        width: 88%;
+        height: fit-content;
+    }
+}
+
+
+}

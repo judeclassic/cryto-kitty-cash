@@ -1,0 +1,109 @@
+.dist {
+    width: 100%;
+    height: fit-content;
+    padding: 100px 0 80px;
+    display: grid;
+    place-items: center; 
+    // background: #f9f9f9;
+
+    @media (max-width:550px) {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    & .wrapper {
+        width: 1050px;
+        height: auto;    
+         
+        @media (max-width:1050px) {
+            width: 80%;
+        }
+
+        & ._tag {
+            display: flex;
+            justify-content: normal;
+            align-items: center;
+            margin-bottom: 14px;
+            font-weight: 600;
+            color: #fff;
+            letter-spacing: .1em;
+            position: relative;
+            text-transform: uppercase;
+            width: 1050px;
+            font-family: 'Josefin Sans', sans-serif;
+
+            @media (max-width:600px) {
+                font-size: 14px;
+                width: 100%;
+            }
+
+            &::before {
+                content: "";
+                margin-right: 8px;
+                display: flex;
+                width: 64px;
+                height: 1px;
+                background: #E7C704;
+            }
+        }
+
+        & .wrap {
+            width: 100%;
+            height: auto;
+            // background-color: #E7C704;
+            margin-top: 3rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+
+            @media (max-width:600px) {
+                justify-content: center;
+            }
+
+            & .dd {
+                width: 300px;
+                height: 70px;
+                background-color: #1a1a1a;
+                padding: 0 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+                color: #E7C704;
+                font-family: 'Bai Jamjuree', sans-serif;
+                font-size: 1rem;
+                text-transform: none;                 
+
+                &:not(:last-of-type) {
+                    margin-right: 3rem;
+                    margin-bottom: 2.5rem;
+
+                    @media (max-width:600px) {
+                        margin-right: 0;
+                        margin-bottom: 1.5rem;
+                    }
+                }
+            }
+
+        }
+        
+    }
+}
+
+
+
+@media (max-width:600px) {
+
+.dist {
+
+    & .wrapper {
+        width: 80%;
+        height: fit-content;
+    }
+}
+
+
+}
+
+

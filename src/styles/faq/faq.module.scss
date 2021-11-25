@@ -1,0 +1,207 @@
+@import "../variables";
+
+// * {
+//     overflow: hidden;
+// }
+
+.header {
+    height: 380px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+
+    & h1 {
+        font-size: 3rem;
+        max-width: 600px;
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: -4rem;
+        color: #f5f5fa;
+        font-family: 'Mochiy Pop One', sans-serif;
+    }
+}
+
+
+.faqSect {
+    height: auto;
+    width: 100%;
+    display: grid;
+    place-items: center; 
+
+    & .faqWrap {
+        width: 700px;
+        height: auto;
+
+        & .faq {
+            max-height: 80px;
+            width: 520px;
+            overflow: hidden;
+            transition: max-height .4s ease-out;
+            background-color: #1a1a1a;
+            padding: 20px 35.573px;
+            margin: 1.5rem auto;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.034);
+
+            &:hover {
+                max-height: 400px;
+            }
+
+            & .faqHead {   
+                
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                & ion-icon {
+                    font-size: 14px;
+                    color: #E7C704;
+                }
+
+                h4 {
+                    font-size: .9rem;
+                    font-family: 'Bai Jamjuree', sans-serif;
+                    font-weight: 700 !important;
+                    color: #E7C704;
+                }
+            }
+
+            & .faqPara {               
+
+                p {
+                    font-size: .9rem;
+                    padding-top: 1rem;
+                    line-height: 1.8;
+                    color: #fff;
+                    font-family: 'Inter', sans-serif;
+                    word-wrap: wrap;
+                }
+            }
+        }
+    }
+}
+
+.contact {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    & h1 {
+        color: #f5f5fa;
+        font-size: 3.5rem;
+        max-width: 600px;
+        text-align: center;
+        line-height: 1.2;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        display: block;
+        font-family: 'Bai Jamjuree', sans-serif;
+    }
+
+    & a {
+         padding: 1rem 1.2rem;
+            letter-spacing: 2px;
+            background-color: #E7C704;
+            color: #000;
+            text-transform: uppercase;
+            font-size: .8rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+    }
+}
+
+@media (max-width:800px) {
+    .faqSect {
+
+        & .faqWrap {
+            width: 85%;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width:600px) {
+    
+    .header {
+        height: 340px;
+        // background-color: aqua;
+
+        & h1 {
+            font-size: 2rem;
+            line-height: 1.8;
+        }
+    }
+
+    .faqSect {
+
+        & .faqWrap {
+            width: 90%;
+            height: auto;
+
+            & .faq {
+                max-height: 80px;
+                width: 95%;
+                overflow: hidden;
+                transition: max-height .4s ease-out;
+                padding: 20px 30px;
+                padding-top: 15px;
+                margin: 1.5rem auto;
+                border-radius: 8px;
+                cursor: pointer;
+                box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.034);
+
+                &:hover {
+                    max-height: 400px;
+                }
+            }
+        }
+    }
+
+    .contact {
+        height: 360px;
+        width: 100%;
+        padding: 0 2rem;
+
+        & h1 {
+            font-size: 2.5rem;
+            max-width: 600px;
+            text-align: center;
+            line-height: 1.4;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+}
+
+@media (max-width:550px) {
+    
+    .header {
+        height: 300px;
+        // background-color: aqua;
+
+        & h1 {
+            font-size: 2rem;
+            line-height: 1.7;
+        }
+    }
+
+    .contact {
+        height: 350px;
+        width: 100%;
+        padding: 0 2rem;
+
+        & h1 {
+            font-size: 2rem;
+            max-width: 600px;
+            text-align: center;
+            line-height: 1.4;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+}
